@@ -1,48 +1,48 @@
-function incrementEach(myArray) {
+function myFunction(nArray) {
     var newArray = [];
-    for (var i = 1; i <= myArray.length; i++) {
-        if (i == 1) {
-            newArray.push("un");
-            continue
+    for (let i = 0; i < nArray.length; i++) {
+
+        switch (nArray[i]) {
+            default: console.log(`The number: ${nArray[i]}  is not included!! Please, choose the numbre from 1 to 10.`);
+            break;
+            case 1:
+                    newArray.push("un");
+                break;
+            case 2:
+                    newArray.push("deux");
+                break;
+            case 3:
+                    newArray.push("trois");
+                break;
+            case 4:
+                    newArray.push("quatre");
+                break;
+            case 5:
+                    newArray.push("cinq");
+                break;
+            case 6:
+                    newArray.push("six");
+                break;
+            case 7:
+                    newArray.push("sept");
+                break;
+            case 8:
+                    newArray.push("huit");
+                break;
+            case 9:
+                    newArray.push("neuf");
+                break;
+            case 10:
+                    newArray.push("dix");
+                break;
         }
-        if (i == 2) {
-            newArray.push("deux");
-            continue
-        }
-        if (i == 3) {
-            newArray.push("trois");
-            continue
-        }
-        if (i == 4) {
-            newArray.push("quatre");
-            continue
-        }
-        if (i == 5) {
-            newArray.push("cinq");
-            continue
-        }
-        if (i == 6) {
-            newArray.push("six");
-            continue
-        }
-        if (i == 7) {
-            newArray.push("sept");
-            continue
-        }
-        if (i == 8) {
-            newArray.push("huit");
-            continue
-        }
-        if (i == 9) {
-            newArray.push("neuf");
-            continue
-        }
-        if (i == 10) {
-            newArray.push("dix");
-            break
-        }
-    };
-    return newArray;
-};
-var nuArray = incrementEach([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-console.log(nuArray);
+
+
+    }
+    return newArray
+}
+
+
+console.log(myFunction([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+//module.exports = numberToString
